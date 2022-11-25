@@ -1,0 +1,6 @@
+/* rather than giving css class a name, use the CSS type attribute selector to find and format our button. */
+/* CSS type attribute selector .it finds the selected type attribute and then formats it to chosen css properties.*/
+input[type="button"] {
+    background-color: pink;
+   }
+ 
