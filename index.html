@@ -9,17 +9,26 @@
     <script src="index.js"></script>
 </head>
 <body>
- <p>Special Exhibition To-Do List</p>
- <br/>
- <!--value attribute to the input tag-->
- <input type="text" id="box" value="Type here to add task"/>
- <br/>
- <!--onclick attribute, calling function name-->
- <!--So when the button is clicked, the JavaScript function will run.-->
- <input type="button" value="Add item "onclick="addItem();"/>
- <!--empty div-->
- <br/>
- <div id="list"></div>
- <br/>
+<div class="header">
+    <!-- <img src="volkovlogo.png" style="float: left;"> -->
+    <p>My Grocery List</p>
+</div>
+<div class="app">
+    <p style="font-size:18px; font-style:bold;">Add and Remove Items!</p>
+    <!--value attribute to the input tag-->
+    <input type="text" id="box" value="type here to add! "/>
+    <br/>
+    <!--onclick attribute, calling function name-->
+    <!--So when the button is clicked, the JavaScript function will run.-->
+    <input type="button" value="Add item" onclick="addItem();"/>
+    <br/>
+    <!--empty div-->
+    <div id="list"></div>
+</div>
+<script>
+    if(localStorage.storedList) {
+     loadList();
+    }
+</script>
 </body>
 </html>
